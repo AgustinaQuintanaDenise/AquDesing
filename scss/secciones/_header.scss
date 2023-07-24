@@ -1,0 +1,51 @@
+/* NAVBAR */
+.logo {
+    width: 120px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.container-fluid {
+    background-color: transparent;
+    font-family: "poppins";
+    font-size: large;
+    
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.nav-link {
+    color: aliceblue !important;
+}
+
+.navbar-nav {
+    align-items: flex-end;
+    margin-right: 15px;
+}
+
+.nav-item {
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.navbar>.container-fluid {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width: 991px) {
+    .nav-link {
+        color: rgb(53, 53, 53) !important;
+    }
+
+    .nav-item {
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+}

@@ -1,0 +1,261 @@
+/* HOME*/
+.spotify {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    margin-top: 10px;
+}
+
+.parrafo-presentacion {
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.parrafo-capacidades {
+    color: #6e6e6e;
+    font-family: "poppins";
+    font-size: medium;
+    text-align: left;
+    line-height: 30.5pt;
+}
+
+.imagen-propia {
+    width: 680px;
+}
+
+.cv {
+    width: 580px;
+    margin-bottom: -200px;
+}
+
+.uno {
+    color: #a658eacb;
+    font-family: "poppins";
+    font-size: xx-large;
+    text-align: center;
+
+}
+
+.dos {
+    color: #6e6e6e;
+    font-family: "poppins";
+    font-size: x-large;
+    font-weight: lighter;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 10px solid #a658eaad;
+
+}
+
+.tres {
+    color: rgb(121, 121, 121);
+    font-family: "poppins";
+    font-size: medium;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cuatro {
+    color: rgb(121, 121, 121);
+    font-family: "poppins";
+    font-size: medium;
+    font-weight: 100;
+    ;
+    text-align: center;
+    font-size: large;
+    margin-top: 30px;
+}
+
+.titulo-capacidades {
+    margin-top: 100px;
+    color: #a658eacb;
+    font-family: "poppins";
+    font-size: xxx-large;
+    font-weight: inherit;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+h6 {
+    color: #a658eacb;
+    font-family: "poppins";
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: -100px;
+}
+
+.boton {
+    background-color: #a658eacb;
+    border-radius: 15px;
+    padding: 15px;
+    font-family: "poppins";
+    color: #ffffff;
+    border: 0;
+    font-weight: lighter;
+    font-size: large;
+    box-shadow: 2px 4px 4px 2px #6e6e6e33;
+    ;
+}
+
+.boton-contactame {
+    display: flex;
+    justify-content: left; margin-left: 185px;
+    
+}
+.boton-curriculum {
+    display: flex;
+    justify-content: center; margin-left: 130px;
+    }
+
+a:hover {
+    background-color: #8144b6;
+    border-radius: 7px;
+    padding: 7px;
+}
+
+.presentacion {
+    display: flex;
+    grid-template-areas: "cv parrafo-capacidades";
+    justify-content: center;
+    flex-direction: row;
+    align-items: center}
+
+
+.curriculum {
+    margin-top: 200px;
+    display: flex;
+    grid-template-areas: "cv parrafo-capacidades";
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center}
+
+    /* CARDS */
+.container-inicio {
+    width: 80%;
+    display: flex; margin-left: 150px;
+    margin-top: 250px;
+    margin-bottom: 150px;
+
+}
+.card {
+    margin: 20px;
+    border-radius: 30px;
+    border-top-right-radius: 200px;
+    border-top-left-radius: 200px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 10px rgb(221, 221, 221);
+}
+.card img {
+    width: 90%;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.card .contenido {
+    padding: 20px;
+}
+.card h3 {
+    color: blueviolet;
+    margin-bottom: 10px;
+    font-family: "poppins";
+    font-weight: bolder;
+}
+
+.card .contenido p {
+    color: rgb(78, 78, 78);
+    font-size: small;
+    font-family: "poppins"
+}
+.card .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 130px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgba(121, 27, 209, 0.795);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0px 0px 7px rgb(136, 136, 136);
+    font-weight: normal;
+    font-family: "poppins";
+}
+@media (max-width: 991px) {
+
+    .spotify {
+        display: flex;
+        flex-wrap: wrap;
+        place-content: space-between space-around;
+        justify-content: center;
+    }
+
+    .parrafo-capacidades {
+        text-align: center;
+    }
+    .algunos-proyectos {
+        margin-bottom: 100px;
+    }
+
+
+    .container-inicio {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+
+    }
+
+    .card {
+        border-radius: 30px;
+        border-top-right-radius: 250px;
+        border-top-left-radius: 250px;
+        width: 60%;
+    }
+
+    .card .contenido a {
+        margin-left: 50px;
+    }
+
+
+
+    .boton-contactame {
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+
+    }
+
+    .boton-curriculum {
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: 230px;
+    }
+
+    .cv {
+        width: 0px;
+    }
+
+    .imagen-propia {
+        width: 400px;
+    }
+
+    .titulo-capacidades {
+        text-align: center;
+    }
+
+    .presentacion {
+        display: flex;
+        grid-template-areas: "cv parrafo-capacidades";
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center
+    }
+}

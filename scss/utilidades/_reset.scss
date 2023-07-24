@@ -1,0 +1,18 @@
+/* Selectores de tipo etiqueta  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Tipografía */
+
+@font-face {
+    font-family: "poppins";
+    src: url(../recursos/Tipografia/Poppins-Light.ttf);
+}
+/* FONDO */
+body {
+    background-image: url(../recursos/Fondo.jpg);
+    background-size: cover;
+
+}

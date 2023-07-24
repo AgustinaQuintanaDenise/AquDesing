@@ -1,0 +1,171 @@
+/* PORTFOLIO */
+
+.titulo-portfolio {
+    color: #a658eacb;
+    font-family: "poppins";
+    font-size: xxx-large;
+    font-weight: normal;
+    text-decoration: overline;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: -150px;
+}
+
+/* GRIDS CARD PORTFOLIO */
+
+.grillapadre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "im1 im2 im3"
+        "im4 im5 im6";
+    align-items: end;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.im1 {
+    grid-area: im1;
+    margin-right: 60px;
+}
+
+.im3 {
+    grid-area: im3;
+    margin-right: 60px;
+}
+
+.im2 {
+    grid-area: im2;
+    margin-right: 60px;
+}
+
+.im4 {
+    grid-area: im4;
+    margin-right: 60px;
+}
+
+.im5 {
+    grid-area: im5;
+    margin-right: 60px;
+}
+
+.im6 {
+    grid-area: im6;
+    margin-right: 60px;
+}
+
+.card-portfolio {
+    width: 100%;
+    margin: 20px;
+    border-radius: 30px;
+    border-top-right-radius: 200px;
+    border-top-left-radius: 200px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 10px rgb(221, 221, 221);
+}
+
+.card-portfolio img {
+    width: 90%;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.card-portfolio .contenido {
+    padding: 20px;
+}
+
+
+.card-portfolio .contenido p {
+    color: rgb(78, 78, 78);
+    font-size: small;
+}
+
+.card-portfolio .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 130px;
+    background-color: #791bd1cb;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0px 0px 7px rgb(136, 136, 136);
+    font-weight: normal;
+}
+
+.card-portfolio {
+    width: 100%;
+    margin: 20px;
+    border-radius: 30px;
+    border-top-right-radius: 200px;
+    border-top-left-radius: 200px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 10px rgb(221, 221, 221);
+}
+
+
+.card-portfolio:hover {
+    box-shadow: 0px 1px 10px rgb(114, 114, 114);
+    transform: translatey(-3%)
+}
+.card:hover {
+    box-shadow: 0px 1px 10px rgb(114, 114, 114);
+    transform: translatey(-3%)
+}
+
+.card-portfolio img {
+    width: 90%;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.card-portfolio .contenido {
+    padding: 20px;
+}
+
+.card-portfolio h3 {
+    color: blueviolet;
+    margin-bottom: 10px;
+    font-family: "poppins";
+    font-weight: bolder;
+}
+.card-portfolio .contenido p {
+    color: rgb(78, 78, 78);
+    font-size: small;
+    font-family: "poppins"
+}
+
+.card-portfolio .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 150px;
+    background-color: rgba(121, 27, 209, 0.795);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0px 0px 7px rgb(136, 136, 136);
+    font-weight: normal;
+    font-family: "poppins";
+}
+
+@media (max-width: 991px) {
+
+    .grillapadre {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "im1"
+            "im2"
+            "im3"
+            "im4"
+            "im5"
+            "im6";
+
+    }
+}

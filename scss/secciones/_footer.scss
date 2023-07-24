@@ -1,0 +1,29 @@
+/* FOOTER */
+.iconos {
+    display: flex;
+    justify-content: center;
+}
+
+.linkedin:hover {
+    transform: translatey(-7%)
+}
+.instagram:hover {
+    transform: translatey(-7%)
+}
+.behance:hover {
+    transform: translatey(-7%)
+}
+
+footer img {
+    width: 50px;
+}
+
+.copyright {
+    color: rgb(49, 49, 49);
+    font-family: "poppins";
+    font-size: small;
+    font-weight: normal;
+    ;
+    text-align: center;
+    margin-block-end: 20px;
+}

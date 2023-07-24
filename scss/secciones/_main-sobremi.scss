@@ -1,0 +1,65 @@
+/* SOBRE MI */
+
+
+.main-sobre-mi {
+    color: rgb(100, 100, 100);
+    ;
+    font-family: "poppins";
+    font-weight: lighter;
+    font-size: medium;
+    margin: 50px;
+    margin-top: 110px;
+
+}
+
+.texto-sobre-mi {
+    margin-top: 80px;
+}
+
+.texto-s-m {
+    color: #a658eacb;
+    font-family: "poppins";
+    font-size: xxx-large;
+    font-weight: inherit;
+    margin-bottom: 30px;
+    text-decoration: overline;
+}
+
+
+.foto-sobre-mi {
+    width: 550px;
+}
+
+.main-sobre-mi {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-areas: "foto-sobre-mi texto-sobre-mi";
+    justify-content: space-between;
+}
+
+foto-sobre-mi {
+    grid-area: foto-sobre-mi;
+}
+
+texto-sobre-mi {
+    grid-area: texto-sobre-mi
+}
+
+@media (max-width: 991px) {
+
+    .main-sobre-mi {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "foto-sobre-mi" "texto-sobre-mi";
+        justify-content: space-between;
+    }
+    .main-sobre-mi {
+        font-size: small
+    }
+
+    ;
+
+    .foto-sobre-mi {
+        width: 250px;
+    }
+}

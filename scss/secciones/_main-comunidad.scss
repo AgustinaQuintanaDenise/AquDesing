@@ -1,0 +1,38 @@
+/* COMUNIDAD */
+
+.maincomunidad {
+    color: #730fa1cb;
+    ;
+    text-decoration: none;
+    font-family: "poppins";
+    font-weight: lighter;
+    font-size: larger;
+}
+
+.carousel-inner {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+iframe {
+    width: 700px;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: #ffffff;
+}
+
+.parrafo-comunidad {
+    font-size: medium;
+    text-align: center;
+    margin-top: 200px;
+    color: #6e6e6e;
+}
+
+@media (max-width: 991px) {
+    iframe {
+        width: 400px;
+    }
+}
