@@ -11,7 +11,7 @@
 
 /* FONDO */
 body {
-  background-image: url(../../recursos/Fondo.jpg);
+  background-color: aquamarine;
   background-size: cover; }
 
 /* NAVBAR */
