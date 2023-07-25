@@ -2,6 +2,8 @@
 .iconos {
     display: flex;
     justify-content: center;
+    gap: 10px
+    ;
 }
 
 .linkedin:hover {
@@ -14,8 +16,9 @@
     transform: translatey(-7%)
 }
 
-footer img {
-    width: 50px;
+footer img { margin-bottom: 20px;
+    width: 35px;
+;
 }
 
 .copyright {
@@ -25,5 +28,5 @@ footer img {
     font-weight: normal;
     ;
     text-align: center;
-    margin-block-end: 20px;
-}
+margin-bottom: 40px;}
+    

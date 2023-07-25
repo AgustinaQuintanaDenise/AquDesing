@@ -67,19 +67,24 @@
     </header>
 
     <!-- MAIN -->
-    <main>
+    <main class="main-container">
         <!-- primera seccion -->
         <div class="presentacion">
             <div class="parrafo-presentacion">
-                <h1 class="uno">Hola! Soy Agustina Quintana</h1>
-                    <p class="dos"> Diseñadora UX/IU
-                        <br> Diseñadora Industrial en proceso
+                <h1 class="uno">Hola! Soy <span class="agustinaquintana">Agustina Quintana</span></h1>
+                    <p class="dos">Diseñadora UX/IU <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+</style>
+
+                        <br> Diseñadora Industrial <span class="enproceso">en proceso</span>
                     </p>
                     <p class="tres">Soy una apasionada del diseño con experiencia en crear experiencias digitales
                         cautivadoras y
-                        centradas en el usuario.</p>
-                    <p class="cuatro">Permítanme compartirles mi enfoque y algunos de mis proyectos más destacados.
-                    </p>
+                        centradas en el usuario.
+                        <br>
+                        <br>
+                        Permítanme compartirles mi enfoque y algunos de mis proyectos más destacados.</p>
+                    
             </div>
             <img class="imagen-propia" src="./recursos/Recurso 4-01.png" alt="Agustinaquintana"></p>
         </div>
@@ -112,46 +117,41 @@
         </div>
         </div>
         <!-- cards -->
-        <div class="container-inicio">
-            <div class="card">
-                <figure>
-                    <img src="./recursos/imagenux.png">
-                    <div class="contenido">
-                        <h3>Diseño UX-UI</h3>
-                        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero impedit dignissimos dolore
-                            ea
-                            eum
-                            nihil incidunt voluptatem nostrum maxime praesentium.</P>
-                        <a href="#">VER PROYECTO</a>
-                </figure>
-            </div>
+        <section class="grilla-home">
+            <div class="im-1">
+                <div class="card-home">
+                    <figure>
+                        <img src="../recursos/imagenux.png">
+                        <div class="contenido">
+                            <h3>DISEÑO UX-UI</h3>
+                            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </P>
+                            <a href="#">VER PROYECTO</a>
+                    </figure>
+                </div>
 
-            <div class="card">
-                <figure>
-                    <img src="./recursos/IMAGENPS.png">
-                    <div class="contenido">
-                        <h3>Diseño UX-UI</h3>
-                        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero impedit dignissimos dolore
-                            ea
-                            eum
-                            nihil incidunt voluptatem nostrum maxime praesentium.</P>
-                        <a href="#">VER PROYECTO</a>
-                </figure>
             </div>
-
-            <div class="card">
-                <figure>
-                    <img src="./recursos/IMAGENDI.png">
-                    <div class="contenido">
-                        <h3>Diseño UX-UI</h3>
-                        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero impedit dignissimos dolore
-                            ea
-                            eum
-                            nihil incidunt voluptatem nostrum maxime praesentium.</P>
-                        <a href="#">VER PROYECTO</a>
-                </figure>
+            <div class="im-3">
+                <div class="card-home">
+                    <figure>
+                        <img src="../recursos/IMAGENDI.png">
+                        <div class="contenido">
+                            <h3>DISEÑO PRODUCTO</h3>
+                            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</P>
+                            <a href="#">VER PROYECTO</a>
+                    </figure>
+                </div>
             </div>
-        </div>
+            <div class="im-2">
+                <div class="card-home">
+                    <figure>
+                        <img src="../recursos/moodboard.png">
+                        <div class="contenido">
+                            <h3>MOODBOARD</h3>
+                            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</P>
+                            <a href="#">VER PROYECTO</a>
+                    </figure>
+                </div>
+            </div>
     </main>
 
     <!-- FOOTER -->
