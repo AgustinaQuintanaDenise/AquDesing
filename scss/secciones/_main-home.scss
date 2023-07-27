@@ -4,7 +4,7 @@
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    
+
 
     .parrafo-presentacion {
         margin-top: 70px;
@@ -13,21 +13,23 @@
     }
 
     .imagen-propia {
-        width: 600px; transform: rotateZ(5deg); transition: all 2s;
+        width: 600px;
+        transform: rotateZ(5deg);
+        transition: all 2s;
     }
 
     .uno {
-        color: #9b9b9b;
+        color: $texto;
         font-family: "poppins";
-        font-size: 20pt;
+        font-size: 17pt;
         font-weight: lighter;
         text-align: center;
         margin-bottom: 20px;
-        
+
     }
 
     .dos {
-        color: #FDB52C;
+        color:$secundario;
         font-family: "poppins";
         font-size: x-large;
         font-weight: bold;
@@ -39,7 +41,7 @@
     }
 
     .tres {
-        color: #9b9b9b;
+        color: $texto;
         font-family: "poppins";
         font-size: medium;
         font-weight: 100;
@@ -47,38 +49,22 @@
         margin-top: 30px;
     }
 
-    .cuatro {
-        color: #9b9b9b;
-        font-family: "poppins";
-        font-size: medium;
-        font-weight: 100;
-        ;
-        text-align: center;
-    }
 
     .agustinaquintana {
-        color: #9359E3;
+        color: $primario;
         font-family: "poppins" extrabold;
         font-size: 30pt;
         font-weight: bold;
         text-align: left;
         margin-bottom: 20px;
         font-family: 'Poppins', sans-serif;
-        
+
     }
 
-    .enproceso {
-        color: #9b9b9b;
-        font-family: "poppins";
-        font-size: 16pt;
-        font-weight: lighter;
-        margin-bottom: 20px;
-    }
-
+    .enproceso {@extend .uno; }
 
 
 }
-
 
 .curriculum {
     margin-top: 200px;
@@ -89,7 +75,7 @@
     align-items: center;
 
     .parrafo-capacidades {
-        color: #3d3d3d;
+        color: $texto;
         font-family: "poppins";
         font-size: medium;
         text-align: left;
@@ -104,7 +90,7 @@
 
     .titulo-capacidades {
         margin-top: 100px;
-        color: #9359E3;
+        color: $primario;
         font-family: "poppins";
         font-size: xxx-large;
         font-weight: bolder;
@@ -117,16 +103,15 @@
 
 
 .boton {
-    background-color: #FDB52C;
+    background-color:$secundario;
     border-radius: 15px;
     padding: 15px;
     font-family: "poppins";
-    color: $botontxt;
+    color: white;
     border: 0;
     font-weight: lighter;
     font-size: large;
     box-shadow: 2px 4px 4px 2px #6e6e6e33;
-    ;
 }
 
 .boton-contactame {
@@ -143,104 +128,17 @@
     margin-left: 300px;
 }
 
-.nav-link:hover {
-    background-color: #8144b6;
-    border-radius: 7px;
-    padding: 7px;
-}
-
-h6 {
-    color: $titulos;
+.algunos-proyectos {
+    color: $primario;
     font-family: "poppins";
     font-size: xx-large;
+    font-weight: bolder;
     text-align: center;
     margin-top: 300px;
     margin-bottom: -100px;
 }
 
-/* CARDS */
-.grilla-home {
-    display: grid;
-    margin-left: 250px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-        "im1 im2 im3";
-    width: 70%;
-    margin-top: 200px;
-    margin-bottom: 200px;}
 
-.im-1 {
-    grid-area: im1;
-    margin-right: 60px;
-}
-
-.im-3 {
-    grid-area: im3;
-    margin-right: 60px;
-}
-
-.im-2 {
-    grid-area: im2;
-    margin-right: 60px;
-}
-
-
-.card-home img {
-    width: 87%;
-    margin-left: 15px;
-    margin-top: 15px;
-}
-
-.card-home .contenido {
-    padding: 20px;
-}
-
-.card-home {
-    width: 90%;
-    border-radius: 30px;
-    border-top-right-radius: 125px;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    overflow: hidden;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 1px 10px rgb(221, 221, 221);
-}
-
-
-.card-home:hover {
-    box-shadow: 0px 1px 10px rgb(114, 114, 114);
-    transform: translatey(-3%)
-}
-
-.card-home h3 {
-    color: blueviolet;
-    margin-bottom: 10px;
-    font-family: "poppins";
-    font-weight: bolder;
-    font-size: large;
-}
-
-.card-home .contenido p {
-    color: rgb(78, 78, 78);
-    font-size: small;
-    font-family: "poppins"
-}
-
-.card-home .contenido a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: 75px;
-    background-color: #FDB52C;
-    color: rgb(255, 255, 255);
-    border-radius: 8px;
-    box-shadow: 0px 0px 7px rgb(136, 136, 136);
-    font-weight: normal;
-    font-family: "poppins";
-    font-size: small;
-}
 
 // CARDS PEQUEÑAS
 
@@ -248,16 +146,15 @@ h6 {
 .container__box {
     max-width: 700px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 70px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
 
     .box {
         width: 150px;
         height: 150px;
         background-color: #ffffff;
-        margin: 15px;
+        margin: 25px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -266,46 +163,53 @@ h6 {
         border-bottom-right-radius: 50px;
         transition: all 300ms ease;
         position: relative;
-        box-shadow: 0px 0px 30px -15px rgba(43, 43, 43, 0.5);
-        transform: rotateZ(360deg); transition: all 2s;
+        box-shadow: 0px 0px 30px -5px rgba(43, 43, 43, 0.5);
+        transform: rotateZ(360deg);
+        transition: all 0.7s;
+    }
+
+    .box img {
+        width: 40px;
+    }
+    
+    .box h5 {
+        margin-top: 30px;
+        text-transform: uppercase;
+        font-size: 13px;
+        color: #969696;
+    
+    }
+    .box:hover h5 {
+        color: #ffffff;
+        opacity: 0;
+    }
+    
+    .box:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 30px -15px rgba(129, 129, 129, 0.5);
+        background:$primario;
+    }
+    
+    .box h4 {
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #ffffff;
+        position: absolute;
+        bottom: 30px;
+        filter: blur(5px);
+        opacity: 0;
+    }
+    
+    .box:hover h4 {
+        font-size: 13px;
+        opacity: 1;
+        filter: blur(0px);
+        color: #ffffff;
+        transition: all 400ms ease;
     }
 }
 
-img {
-    width: 40px;
-}
 
-.box h5 {
-    margin-top: 30px;
-    text-transform: uppercase;
-    font-size: 13px;
-    color: #969696;
-}
-
-.box:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 30px -15px rgba(129, 129, 129, 0.5);
-    background: #8144b6;
-}
-.box:hover h5 {color: #ffffff; opacity: 0;}
-
-.box h4 {
-    text-transform: uppercase;
-    font-size: 16px;
-    color: #ffffff;
-    position: absolute;
-    bottom: 30px;
-    filter: blur(5px);
-    opacity: 0;
-}
-
-.box:hover h4 {
-    font-size: 13px;
-    opacity: 1;
-    filter: blur(0px);
-    color: #ffffff;
-    transition: all 400ms ease;
-}
 
 
 @media (max-width: 991px) {
@@ -355,50 +259,63 @@ img {
         align-items: center
     }
 
-    .grilla-home {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "im1"
-            "im2"
-            "im3";
-        margin: auto; 
+    // CARDS PEQUEÑAS
+
+    .container__box {
+        justify-content: center;  margin-top: 100px;
+
+        .box img {
+            width: 20px;
+        }
+
+        .box {
+            width: 0px;
+            height: 0px;
+            margin: 50px;
+            transition: none;
+            position: 0;
+            box-shadow: 0px;
+            
+        }
     }
-    .card-home {
-    margin-bottom: 80px;}
-    .card-home:hover {
-        transform: translatey(0%)
+
+    .box h5 {
+        font-size: 10px;
+        color: #969696;
     }
 
-
-// CARDS PEQUEÑAS
-
-
-.container__box {
-    justify-content: center;
-
-    .box {
-        width: 0px;
-        height: 0px;
-        margin: 50px;
-        transition: none;
-        position: 0;
+    .box:hover {
+        transform: none;
         box-shadow: 0px;
+        background: none;
     }
-}
 
-img {
-    width: 20px;
-}
+    .box:hover h5 {
+        color: #969696;
+        opacity: 100;
+    }
+    .circle {
+        width: 0px;
+    }
+    .circlegrandeuno {
+        width: 0px;
+    }
+    
+    .circlegrande {
+        width: 0px;
 
-.box h5 {
-    font-size: 10px;
-    color: #969696;
-}
+    }
+    
+    .circlegrande-dos {
+        width: 0px;
+    }
 
-.box:hover {
-    transform: none;
-    box-shadow: 0px;
-    background: none;
-}
-.box:hover h5 {color: #969696; opacity: 100;}
+    .circlegrande-tres {
+        width: 0px;
+    }
+    
+    .rectangulo {
+        width:0px;
+    
+    }
 }

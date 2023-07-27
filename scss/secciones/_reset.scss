@@ -16,6 +16,60 @@ body {
     background-size: cover;
 }
 
+// FONDO 
+
+
+.circlegrande {
+    position: absolute;
+    margin-top: 90px;
+    margin-right: 1400px;
+    width: 250px;
+    height: 250px;
+    background: $secundario;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin-inline-start: -130px;
+    transform: translatey(10px);
+    transition: all 2s;
+}
+
+
+.circlegrande-dos {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: $primario;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin-inline-start: -130px;
+    transform: translatey(10px);
+    transition: all 5s;
+}
+.circlegrande-tres {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: $secundario;
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-left: 1100px;
+    z-index: 2
+
+}
+
+.rectangulo {
+    position: absolute;
+    width: 1300px;
+    height: 500px;
+    margin-top: 140px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    background: #8144b63f;
+    z-index: -20
+
+}
+
 @media (max-width: 991px) { body { background-image: none;
 }
 }
+

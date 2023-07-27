@@ -1,8 +1,7 @@
 /* COMUNIDAD */
 
 .maincomunidad {
-    color: #730fa1cb;
-    ;
+    color: $primario;
     text-decoration: none;
     font-family: "poppins";
     font-weight: lighter;
@@ -18,6 +17,7 @@
 
 iframe {
     width: 700px;
+
 }
 
 .carousel-dark .carousel-indicators [data-bs-target] {
@@ -28,11 +28,13 @@ iframe {
     font-size: medium;
     text-align: center;
     margin-top: 200px;
-    color: #6e6e6e;
+    color: $texto;
 }
+
 
 @media (max-width: 991px) {
     iframe {
-        width: 400px;
+        width: 400px; 
     }
+
 }
