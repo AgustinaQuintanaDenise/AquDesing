@@ -10,6 +10,7 @@
     font-family: "poppins";
     src: url(../recursos/Tipografia/Poppins-Light.ttf);
 }
+
 /* FONDO */
 body {
     background-image: url(../recursos/Fondo.jpg);
@@ -45,6 +46,7 @@ body {
     transform: translatey(10px);
     transition: all 5s;
 }
+
 .circlegrande-tres {
     position: absolute;
     width: 400px;
@@ -54,7 +56,6 @@ body {
     margin-top: 100px;
     margin-left: 1100px;
     z-index: 2
-
 }
 
 .rectangulo {
@@ -66,10 +67,13 @@ body {
     border-bottom-right-radius: 200px;
     background: #8144b63f;
     z-index: -20
-
 }
 
-@media (max-width: 991px) { body { background-image: none;
-}
-}
 
+
+
+@media (max-width: 991px) {
+    body {
+        background-image: none;
+    }
+}

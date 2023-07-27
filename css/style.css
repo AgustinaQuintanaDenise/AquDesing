@@ -179,7 +179,18 @@ body {
     text-align: left;
     margin-bottom: 20px; }
 
-.boton {
+.botones .boton-contactame {
+  background-color: #FDB52C;
+  border-radius: 15px;
+  padding: 15px;
+  font-family: "poppins";
+  color: white;
+  border: 0;
+  font-weight: lighter;
+  font-size: large;
+  box-shadow: 2px 4px 4px 2px #6e6e6e33; }
+
+.botones .boton-curriculum {
   background-color: #FDB52C;
   border-radius: 15px;
   padding: 15px;
@@ -197,9 +208,8 @@ body {
   margin-top: -50px; }
 
 .boton-curriculum {
-  display: flex;
-  justify-content: center;
-  margin-left: 300px; }
+  display: inline-block;
+  margin-left: 750px; }
 
 .algunos-proyectos {
   color: #9359E3;
