@@ -4,15 +4,16 @@
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    
 
     .parrafo-presentacion {
         margin-top: 70px;
         margin-left: 50px;
-        margin-right: 50px;
+        margin-right: 50px
     }
 
     .imagen-propia {
-        width: 600px;
+        width: 600px; transform: rotateZ(5deg); transition: all 2s;
     }
 
     .uno {
@@ -22,6 +23,7 @@
         font-weight: lighter;
         text-align: center;
         margin-bottom: 20px;
+        
     }
 
     .dos {
@@ -165,8 +167,7 @@ h6 {
         "im1 im2 im3";
     width: 70%;
     margin-top: 200px;
-    margin-bottom: 200px;
-}
+    margin-bottom: 200px;}
 
 .im-1 {
     grid-area: im1;
@@ -198,7 +199,7 @@ h6 {
     width: 90%;
     border-radius: 30px;
     border-top-right-radius: 125px;
-    border-bottom-left-radius: 120px;
+    border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     overflow: hidden;
@@ -241,10 +242,73 @@ h6 {
     font-size: small;
 }
 
+// CARDS PEQUEÑAS
+
+
+.container__box {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+    .box {
+        width: 150px;
+        height: 150px;
+        background-color: #ffffff;
+        margin: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        transition: all 300ms ease;
+        position: relative;
+        box-shadow: 0px 0px 30px -15px rgba(43, 43, 43, 0.5);
+        transform: rotateZ(360deg); transition: all 2s;
+    }
+}
+
+img {
+    width: 40px;
+}
+
+.box h5 {
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #969696;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px -15px rgba(129, 129, 129, 0.5);
+    background: #8144b6;
+}
+.box:hover h5 {color: #ffffff; opacity: 0;}
+
+.box h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 30px;
+    filter: blur(5px);
+    opacity: 0;
+}
+
+.box:hover h4 {
+    font-size: 13px;
+    opacity: 1;
+    filter: blur(0px);
+    color: #ffffff;
+    transition: all 400ms ease;
+}
+
 
 @media (max-width: 991px) {
-
-
 
     .parrafo-capacidades {
         text-align: center;
@@ -275,7 +339,7 @@ h6 {
     }
 
     .imagen-propia {
-        width: 400px;
+        width: 300px;
     }
 
     .titulo-capacidades {
@@ -304,4 +368,37 @@ h6 {
     .card-home:hover {
         transform: translatey(0%)
     }
+
+
+// CARDS PEQUEÑAS
+
+
+.container__box {
+    justify-content: center;
+
+    .box {
+        width: 0px;
+        height: 0px;
+        margin: 50px;
+        transition: none;
+        position: 0;
+        box-shadow: 0px;
+    }
+}
+
+img {
+    width: 20px;
+}
+
+.box h5 {
+    font-size: 10px;
+    color: #969696;
+}
+
+.box:hover {
+    transform: none;
+    box-shadow: 0px;
+    background: none;
+}
+.box:hover h5 {color: #969696; opacity: 100;}
 }

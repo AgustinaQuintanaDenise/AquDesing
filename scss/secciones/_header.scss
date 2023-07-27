@@ -53,9 +53,14 @@
     align-content: space-between;
     margin-top: 170px;
 }
+
 @media (max-width: 991px) {
     .nav-link {
-        color: rgb(53, 53, 53) !important;
+        color: rgb(255, 255, 255) !important;
+    }
+
+    svg {
+        color: white;
     }
 
     .nav-item {
@@ -63,6 +68,7 @@
         margin-top: 0px;
     }
 }
+
 .spotify {
     display: flex;
     flex-wrap: wrap;

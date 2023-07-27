@@ -14,6 +14,10 @@ body {
   background-image: url(../recursos/Fondo.jpg);
   background-size: cover; }
 
+@media (max-width: 991px) {
+  body {
+    background-image: none; } }
+
 /* NAVBAR */
 .logo {
   width: 120px;
@@ -62,7 +66,9 @@ body {
 
 @media (max-width: 991px) {
   .nav-link {
-    color: #353535 !important; }
+    color: white !important; }
+  svg {
+    color: white; }
   .nav-item {
     margin-right: 0px;
     margin-top: 0px; } }
@@ -84,7 +90,9 @@ body {
     margin-left: 50px;
     margin-right: 50px; }
   .presentacion .imagen-propia {
-    width: 600px; }
+    width: 600px;
+    transform: rotateZ(5deg);
+    transition: all 2s; }
   .presentacion .uno {
     color: #9b9b9b;
     font-family: "poppins";
@@ -224,7 +232,7 @@ h6 {
   width: 90%;
   border-radius: 30px;
   border-top-right-radius: 125px;
-  border-bottom-left-radius: 120px;
+  border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
   overflow: hidden;
@@ -261,6 +269,63 @@ h6 {
   font-family: "poppins";
   font-size: small; }
 
+.container__box {
+  max-width: 700px;
+  margin: auto;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
+  .container__box .box {
+    width: 150px;
+    height: 150px;
+    background-color: #ffffff;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: all 300ms ease;
+    position: relative;
+    box-shadow: 0px 0px 30px -15px rgba(43, 43, 43, 0.5);
+    transform: rotateZ(360deg);
+    transition: all 2s; }
+
+img {
+  width: 40px; }
+
+.box h5 {
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #969696; }
+
+.box:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 30px -15px rgba(129, 129, 129, 0.5);
+  background: #8144b6; }
+
+.box:hover h5 {
+  color: #ffffff;
+  opacity: 0; }
+
+.box h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 30px;
+  filter: blur(5px);
+  opacity: 0; }
+
+.box:hover h4 {
+  font-size: 13px;
+  opacity: 1;
+  filter: blur(0px);
+  color: #ffffff;
+  transition: all 400ms ease; }
+
 @media (max-width: 991px) {
   .parrafo-capacidades {
     text-align: center; }
@@ -280,7 +345,7 @@ h6 {
   .cv {
     margin-top: -200px; }
   .imagen-propia {
-    width: 400px; }
+    width: 300px; }
   .titulo-capacidades {
     text-align: center; }
   .presentacion {
@@ -297,7 +362,28 @@ h6 {
   .card-home {
     margin-bottom: 80px; }
   .card-home:hover {
-    transform: translatey(0%); } }
+    transform: translatey(0%); }
+  .container__box {
+    justify-content: center; }
+    .container__box .box {
+      width: 0px;
+      height: 0px;
+      margin: 50px;
+      transition: none;
+      position: 0;
+      box-shadow: 0px; }
+  img {
+    width: 20px; }
+  .box h5 {
+    font-size: 10px;
+    color: #969696; }
+  .box:hover {
+    transform: none;
+    box-shadow: 0px;
+    background: none; }
+  .box:hover h5 {
+    color: #969696;
+    opacity: 100; } }
 
 /* SOBRE MI */
 .main-sobre-mi {
@@ -367,7 +453,8 @@ texto-sobre-mi {
   width: 70%;
   margin: auto;
   justify-content: center;
-  margin-top: 200px; }
+  margin-top: 200px;
+  margin-bottom: 200px; }
 
 .im1 {
   grid-area: im1;
@@ -470,7 +557,7 @@ texto-sobre-mi {
   padding: 10px;
   margin-top: 10px;
   margin-left: 150px;
-  background-color: rgba(121, 27, 209, 0.795);
+  background-color: #FDB52C;
   color: white;
   border-radius: 8px;
   box-shadow: 0px 0px 7px #888888;
@@ -560,6 +647,14 @@ iframe {
 
 label {
   font-family: "poppins"; }
+
+.img-fluid {
+  width: 90%;
+  margin-top: -100px; }
+
+@media (max-width: 991px) {
+  .img-fluid {
+    width: 0%; } }
 
 /* FOOTER */
 .iconos {

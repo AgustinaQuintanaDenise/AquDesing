@@ -47,3 +47,9 @@
 label {
     font-family: "poppins";
 }
+
+.img-fluid { width: 90%; margin-top: -100px;}
+
+@media (max-width: 991px) {.img-fluid { width: 0%;}
+
+}

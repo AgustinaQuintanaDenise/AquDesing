@@ -15,3 +15,7 @@ body {
     background-image: url(../recursos/Fondo.jpg);
     background-size: cover;
 }
+
+@media (max-width: 991px) { body { background-image: none;
+}
+}
