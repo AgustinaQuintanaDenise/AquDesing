@@ -13,6 +13,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" href="">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>Aqu Desing | Home</title>
 </head>
@@ -23,9 +26,6 @@
 
     <!-- HEADER -->
     <header>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-            crossorigin="anonymous"></script>
         <!-- navbar -->
         <section class="navbar">
             <nav class="navbar navbar-expand-lg">
@@ -67,7 +67,7 @@
 
     <!-- MAIN -->
     <main class="main-container">
-            <div class="circlegrande"></div>
+        <div class="circlegrande"></div>
         </section>
         <div class="container__box">
             <div class="box">
@@ -93,7 +93,7 @@
             </div>
         </div>
 
-    
+
         <!-- primera seccion -->
         <div class="presentacion">
             <div class="parrafo-presentacion">
@@ -111,76 +111,79 @@
                     <br>
                     Permítanme compartirles mi enfoque y algunos de mis proyectos más destacados.
                 </p>
-
             </div>
-            <img class="imagen-propia" src="./recursos/Recurso 4-01.png" alt="Agustinaquintana"></p>
+            <div class="imagen-agustina">
+                <img class="imagen-propia" src="./recursos/Recurso 4-01.png" alt="Agustinaquintana"></p>
+            </div>
         </div>
         <div class="botones">
-            <button class="boton-contactame"> CONTACTAME</button>
+            <div class="boton-dos">
+                <button class="boton-contactame"> CONTACTAME</button>
+            </div>
         </div>
         <div class="circlegrande-dos"></div>
         <!-- segunda seccion -->
         <div class="curriculum">
-            <img class="cv" src="./recursos/cv.png" alt="mockupcelular">
+            <div class="mockupcelular">
+                <img class="cv" src="./recursos/cv.png" alt="mockupcelular">
+            </div>
             <div class="parrafo-capacidades">
 
                 <h2 class="titulo-capacidades">Mis capacidades</p>
                 </h2>
-                <li class="parrafo-capacidades"> - Pensamiento centrado en el usuarios </li>
-                <li class="parrafo-capacidades">- Investigación de usuarios</li>
-                <li class="parrafo-capacidades">- Diseño de interacción</li>
-                <li class="parrafo-capacidades">- Diseño visual</li>
-                <li class="parrafo-capacidades">- Prototipado</li>
+                <ul class="lista-capacidades">
+                    <li class="parrafo-capacidades"> - Pensamiento centrado en el usuarios </li>
+                    <li class="parrafo-capacidades">- Investigación de usuarios</li>
+                    <li class="parrafo-capacidades">- Diseño de interacción</li>
+                    <li class="parrafo-capacidades">- Diseño visual</li>
+                    <li class="parrafo-capacidades">- Prototipado</li>
+                </ul>
             </div>
         </div>
         <div class="botones">
-            <button class="boton-curriculum"> CURRICULUM</button>
+            <div class="boton-uno">
+                <button class="boton-curriculum"> CURRICULUM</button>
+            </div>
         </div>
         <!-- tercera seccion -->
-        <div class="circlegrande-tres"></div>
         <div>
             <h6 class="algunos-proyectos">
                 <p>Algunos de mis proyectos</p>
             </h6>
         </div>
-        </div>
         <!-- cards -->
-        <div class="rectangulo"></div>
-        <section class="grilla-home">
-            <div class="im-1">
-                <div class="card-home">
-                    <figure>
-                        <img src="./recursos/imagenux.png">
-                        <div class="contenido">
-                            <h3>DISEÑO UX-UI</h3>
-                            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </P>
-                            <a href="#">VER PROYECTO</a>
-                    </figure>
-                </div>
-
-            </div>
-            <div class="im-3">
-                <div class="card-home">
-                    <figure>
-                        <img src="./recursos/IMAGENDI.png">
-                        <div class="contenido">
-                            <h3>DISEÑO PRODUCTO</h3>
-                            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</P>
-                            <a href="#">VER PROYECTO</a>
-                    </figure>
+        <section class="card-container">
+            <div class="card" style="width: 18rem;">
+                <img class="img-card" src="./recursos/mihospitalportfolio.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
-            <div class="im-2">
-                <div class="card-home">
-                    <figure>
-                        <img src="./recursos/moodboard.png">
-                        <div class="contenido">
-                            <h3>MOODBOARD</h3>
-                            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</P>
-                            <a href="#">VER PROYECTO</a>
-                    </figure>
+            <div class="card" style="width: 18rem;">
+                <img class="img-card" src="./recursos/moodboardporfotlio.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
+            <div class="card" style="width: 18rem;">
+                <img class="img-card" src="./recursos/shiraportfolio.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- FOOTER -->

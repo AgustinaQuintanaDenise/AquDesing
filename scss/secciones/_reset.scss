@@ -14,8 +14,8 @@
 /* FONDO */
 body {
     background-image: url(../recursos/Fondo.jpg);
-    background-size: cover;
-}
+    width: 98%;
+height: 100%;}
 
 // FONDO 
 
@@ -46,30 +46,6 @@ body {
     transform: translatey(10px);
     transition: all 5s;
 }
-
-.circlegrande-tres {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background: $secundario;
-    border-radius: 50%;
-    margin-top: 100px;
-    margin-left: 1100px;
-    z-index: 2
-}
-
-.rectangulo {
-    position: absolute;
-    width: 1300px;
-    height: 500px;
-    margin-top: 140px;
-    border-top-right-radius: 200px;
-    border-bottom-right-radius: 200px;
-    background: #8144b63f;
-    z-index: -20
-}
-
-
 
 
 @media (max-width: 991px) {

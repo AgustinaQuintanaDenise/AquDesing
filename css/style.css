@@ -12,7 +12,8 @@
 /* FONDO */
 body {
   background-image: url(../recursos/Fondo.jpg);
-  background-size: cover; }
+  width: 98%;
+  height: 100%; }
 
 .circlegrande {
   position: absolute;
@@ -37,26 +38,6 @@ body {
   margin-inline-start: -130px;
   transform: translatey(10px);
   transition: all 5s; }
-
-.circlegrande-tres {
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  background: #FDB52C;
-  border-radius: 50%;
-  margin-top: 100px;
-  margin-left: 1100px;
-  z-index: 2; }
-
-.rectangulo {
-  position: absolute;
-  width: 1300px;
-  height: 500px;
-  margin-top: 140px;
-  border-top-right-radius: 200px;
-  border-bottom-right-radius: 200px;
-  background: #8144b63f;
-  z-index: -20; }
 
 @media (max-width: 991px) {
   body {
@@ -117,10 +98,6 @@ body {
     margin-top: 70px;
     margin-left: 50px;
     margin-right: 50px; }
-  .presentacion .imagen-propia {
-    width: 600px;
-    transform: rotateZ(5deg);
-    transition: all 2s; }
   .presentacion .uno, .presentacion .enproceso {
     color: #7a7a7a;
     font-family: "poppins";
@@ -153,6 +130,12 @@ body {
     margin-bottom: 20px;
     font-family: 'Poppins', sans-serif; }
 
+.imagen-agustina img {
+  width: 600px; }
+
+.mockupcelular img {
+  width: 600px; }
+
 .curriculum {
   margin-top: 200px;
   display: flex;
@@ -160,16 +143,13 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center; }
-  .curriculum .parrafo-capacidades {
+  .curriculum .lista-capacidades li {
     color: #7a7a7a;
     font-family: "poppins";
     font-size: medium;
     text-align: left;
     line-height: 30.5pt;
     list-style: none; }
-  .curriculum .cv {
-    width: 580px;
-    margin-bottom: -200px; }
   .curriculum .titulo-capacidades {
     margin-top: 100px;
     color: #9359E3;
@@ -201,15 +181,24 @@ body {
   font-size: large;
   box-shadow: 2px 4px 4px 2px #6e6e6e33; }
 
-.boton-contactame {
+.boton-uno {
   display: flex;
-  justify-content: left;
-  margin-left: 295px;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 350px;
+  margin-top: -130px; }
+
+.boton-dos {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 280px;
   margin-top: -50px; }
 
-.boton-curriculum {
-  display: inline-block;
-  margin-left: 750px; }
+.botones:hover {
+  transform: scale(1.2); }
 
 .algunos-proyectos {
   color: #9359E3;
@@ -272,30 +261,20 @@ body {
     transition: all 400ms ease; }
 
 @media (max-width: 991px) {
-  .parrafo-capacidades {
+  .curriculum .lista-capacidades li {
     text-align: center; }
+  .imagen-agustina img {
+    width: 400px; }
+  .mockupcelular img {
+    width: 0px; }
   .algunos-proyectos {
-    margin-bottom: 100px; }
-  .boton-contactame {
-    display: flex;
-    justify-content: center;
-    margin-left: 0px;
-    margin-top: 50px; }
-  .boton-curriculum {
-    display: flex;
-    justify-content: start;
-    margin-left: 30px;
-    margin-top: 20px;
-    margin-bottom: -80px; }
-  .cv {
-    margin-top: -200px; }
-  .imagen-propia {
-    width: 300px; }
-  .titulo-capacidades {
+    margin-top: 70px;
+    margin-bottom: -100px; }
+  .curriculum .titulo-capacidades {
+    margin-top: -100px;
     text-align: center; }
   .presentacion {
     display: flex;
-    grid-template-areas: "cv parrafo-capacidades";
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -333,7 +312,23 @@ body {
   .circlegrande-tres {
     width: 0px; }
   .rectangulo {
-    width: 0px; } }
+    width: 0px; }
+  .boton-uno {
+    justify-content: center;
+    margin-left: 0px;
+    margin-top: 50px; }
+  .boton-dos {
+    justify-content: center;
+    margin-left: 0px;
+    margin-top: 50px; }
+  .boton-uno {
+    justify-content: center;
+    margin-left: 0px;
+    margin-top: 50px; } }
+
+@media (max-width: 1136px) {
+  .boton-dos {
+    margin-top: 0px; } }
 
 /* SOBRE MI */
 .main-sobre-mi {
@@ -497,6 +492,10 @@ iframe {
     width: 400px; } }
 
 /* CONTACTO */
+* {
+  margin: 0px;
+  padding: 0px; }
+
 .titulo-contacto {
   color: #9359E3;
   font-family: "poppins";
@@ -540,13 +539,24 @@ iframe {
   box-shadow: 0px 1px 10px #727272;
   transform: scale(1.2); }
 
-.container-contacto .img-fluid {
+.col-md-6 .img-fluid {
   width: 90%;
-  margin-top: -100px; }
+  margin-top: 100px; }
 
 @media (max-width: 991px) {
-  .img-fluid {
-    width: 0%; } }
+  .col-md-6 .img-fluid {
+    width: 0px; }
+  .container-contacto .first_col {
+    background-color: #d0bbf8;
+    height: 450px;
+    position: relative;
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px #5c5c5c;
+    margin-top: -30px; }
+  .parrafo-contacto {
+    margin-left: 20px;
+    font-size: medium; } }
 
 /* FOOTER */
 .iconos {
@@ -576,74 +586,53 @@ footer img {
   margin-bottom: 40px; }
 
 /* CARDS */
-.grilla-home {
-  display: grid;
-  margin-left: 250px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "im1 im2 im3";
-  width: 70%;
+* {
+  margin: 0;
+  padding: 0; }
+
+/* Tipografía */
+@font-face {
+  font-family: "inter";
+  src: url(../recursos/Tipografia/Inter-VariableFont_slnt\,wght.ttf); }
+
+@font-face {
+  font-family: "poppins";
+  src: url(../recursos/Tipografia/Poppins-Light.ttf); }
+
+.card-container {
+  display: flex;
+  gap: 40px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 200px;
   margin-bottom: 200px; }
-  .grilla-home .im-1 {
-    grid-area: im1;
-    margin-right: 60px; }
-  .grilla-home .im-3 {
-    grid-area: im3;
-    margin-right: 60px; }
-  .grilla-home .im-2 {
-    grid-area: im2;
-    margin-right: 60px; }
+  .card-container .card {
+    border-top-left-radius: 135px;
+    border-top-right-radius: 135px;
+    box-shadow: 3px 3px 17px rgba(170, 170, 170, 0.459); }
+  .card-container .btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #ffc107;
+    --bs-btn-border-color: #ffc107;
+    margin-left: 100px;
+    font-family: "poppins";
+    text-transform: uppercase;
+    font-size: medium; }
+  .card-container .card-title {
+    margin-bottom: var(--bs-card-title-spacer-y);
+    color: purple;
+    font-family: "poppins";
+    font-weight: bolder;
+    text-transform: uppercase; }
+  .card-container .card-text {
+    font-family: "poppins";
+    font-size: small; }
 
-.card-home {
-  width: 90%;
-  border-radius: 30px;
-  border-top-right-radius: 125px;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
-  background-color: white;
-  box-shadow: 0px 1px 10px #dddddd; }
-  .card-home .contenido {
-    padding: 20px; }
+.btn:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: #8f6c02;
+  border-color: #8f6c02; }
 
-.card-home img {
-  width: 87%;
-  margin-left: 15px;
-  margin-top: 15px; }
-
-.card-home h3 {
-  color: #9359E3;
-  margin-bottom: 10px;
-  font-family: "poppins";
-  font-weight: bolder;
-  font-size: large; }
-
-.card-home .contenido p {
-  color: #4e4e4e;
-  font-size: small;
-  font-family: "poppins"; }
-
-.card-home .contenido a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 10px;
-  margin-top: 10px;
-  margin-left: 75px;
-  background-color: #FDB52C;
-  color: white;
-  border-radius: 8px;
-  box-shadow: 0px 0px 7px #888888;
-  font-weight: normal;
-  font-family: "poppins";
-  font-size: small; }
-
-@media (max-width: 991px) {
-  .grilla-home {
-    grid-template-columns: 1fr;
-    grid-template-areas: "im1" "im2" "im3";
-    margin: auto; }
-  .card-home {
-    margin-bottom: 80px; }
-  .card-home:hover {
-    transform: translatey(0%); } }
+.img-card {
+  padding: 20px; }

@@ -12,12 +12,6 @@
         margin-right: 50px
     }
 
-    .imagen-propia {
-        width: 600px;
-        transform: rotateZ(5deg);
-        transition: all 2s;
-    }
-
     .uno {
         color: $texto;
         font-family: "poppins";
@@ -68,6 +62,14 @@
 
 }
 
+.imagen-agustina img {
+    width: 600px;
+}
+
+.mockupcelular img {
+    width: 600px;
+}
+
 .curriculum {
     margin-top: 200px;
     display: flex;
@@ -76,7 +78,7 @@
     flex-wrap: wrap;
     align-items: center;
 
-    .parrafo-capacidades {
+    .lista-capacidades li {
         color: $texto;
         font-family: "poppins";
         font-size: medium;
@@ -85,10 +87,6 @@
         list-style: none;
     }
 
-    .cv {
-        width: 580px;
-        margin-bottom: -200px;
-    }
 
     .titulo-capacidades {
         margin-top: 100px;
@@ -101,6 +99,7 @@
     }
 
 }
+
 // MIXIN
 
 @mixin boton ($color-botones) {
@@ -117,23 +116,40 @@
 
 .botones {
     .boton-contactame {
-        @include boton($secundario)
+        @include boton($secundario);
     }
-    .boton-curriculum { @include boton($secundario)
+
+    .boton-curriculum {
+        @include boton($secundario);
+
+
     }
 }
 
-.boton-contactame {
+.boton-uno {
     display: flex;
-    justify-content: left;
-    margin-left: 295px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 350px;
+    margin-top: -130px
+}
+
+.boton-dos {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 280px;
     margin-top: -50px;
 }
 
-.boton-curriculum {
-    display: inline-block;
-    margin-left: 750px;
+
+
+.botones:hover {
+    transform: scale(1.2)
 }
+
 
 .algunos-proyectos {
     color: $primario;
@@ -222,45 +238,27 @@
 
 @media (max-width: 991px) {
 
-    .parrafo-capacidades {
-        text-align: center;
+    .curriculum .lista-capacidades li {text-align: center;}
+
+    .imagen-agustina img {
+        width: 400px;
+    }
+
+    .mockupcelular img {
+        width: 0px;
     }
 
     .algunos-proyectos {
-        margin-bottom: 100px;
+        margin-top: 70px;
+        margin-bottom: -100px;
     }
 
-    .boton-contactame {
-        display: flex;
-        justify-content: center;
-        margin-left: 0px;
-        margin-top: 50px;
-
-    }
-
-    .boton-curriculum {
-        display: flex;
-        justify-content: start;
-        margin-left: 30px;
-        margin-top: 20px;
-        margin-bottom: -80px;
-    }
-
-    .cv {
-        margin-top: -200px;
-    }
-
-    .imagen-propia {
-        width: 300px;
-    }
-
-    .titulo-capacidades {
+    .curriculum .titulo-capacidades {margin-top: -100px;
         text-align: center;
     }
 
     .presentacion {
         display: flex;
-        grid-template-areas: "cv parrafo-capacidades";
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
@@ -329,4 +327,29 @@
         width: 0px;
 
     }
+
+    .boton-uno {
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+    
+    .boton-dos {
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+
+    .boton-uno {
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: 50px;}
+
 }
+
+@media (max-width: 1136px){
+
+    .boton-dos {
+        margin-top: 0px;
+    
+    }}
