@@ -14,11 +14,12 @@
     margin-top: 50px;
     margin-bottom: 200px;
 }
+.carousel-item iframe { display: flex;
+    justify-content: center;
+    width: 700px;}
 
-iframe {
-    width: 700px;
 
-}
+
 
 .carousel-dark .carousel-indicators [data-bs-target] {
     background-color: #ffffff;
@@ -33,8 +34,19 @@ iframe {
 
 
 @media (max-width: 991px) {
-    iframe {
-        width: 400px; 
-    }
+
+
+    .carousel-item iframe {display: flex;
+        justify-content: center;
+        width: 400px;} 
+
+}
+
+@media (max-width: 550px) {
+
+
+    .carousel-item iframe {display: flex;
+        justify-content: center;
+        width: 250px;} 
 
 }

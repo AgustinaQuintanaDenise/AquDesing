@@ -1,5 +1,5 @@
 /* CONTACTO */
-*{margin: 0px;
+.row {margin: 0px;
 padding: 0px;}
 
 .titulo-contacto {
@@ -11,6 +11,7 @@ padding: 0px;}
     display: flex;
     justify-content: center;
     margin-top: 250px;
+    
 }
 
 .parrafo-contacto {
@@ -55,8 +56,8 @@ padding: 0px;}
 
 }
 .col-md-6 .img-fluid {
-    width: 90%;
-    margin-top: 100px;
+    width: 80%;
+    margin-top: 0px;
 }
 
 @media (max-width: 991px) {
