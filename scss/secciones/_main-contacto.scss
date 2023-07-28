@@ -2,17 +2,9 @@
 .row {margin: 0px;
 padding: 0px;}
 
-.titulo-contacto {
-    color: $primario;
-    font-family: "poppins";
-    font-size: xxx-large;
-    font-weight: normal;
-    text-decoration: overline;
-    display: flex;
-    justify-content: center;
-    margin-top: 250px;
-    
+.titulo-contacto {@extend .texto-s-m ; margin-bottom: 50px;
 }
+
 
 .parrafo-contacto {
     margin-left: 120px;

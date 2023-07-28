@@ -238,7 +238,9 @@
 
 @media (max-width: 991px) {
 
-    .curriculum .lista-capacidades li {text-align: center;}
+    .curriculum .lista-capacidades li {
+        text-align: center;
+    }
 
     .imagen-agustina img {
         width: 400px;
@@ -253,7 +255,8 @@
         margin-bottom: -100px;
     }
 
-    .curriculum .titulo-capacidades {margin-top: -100px;
+    .curriculum .titulo-capacidades {
+        margin-top: -100px;
         text-align: center;
     }
 
@@ -271,6 +274,11 @@
         justify-content: center;
         margin-top: 100px;
 
+        .box:hover h5 {
+            color: #969696;
+            opacity: 100;
+        }
+
         .box img {
             width: 20px;
         }
@@ -284,22 +292,28 @@
             box-shadow: 0px;
 
         }
+
+        .box:hover {
+            transform: none;
+            box-shadow: 0px;
+            background: none;
+
+        }
+
+        .box h5 {
+            font-size: 10px;
+            color: #969696;
+
+
+        }
     }
 
-    .box h5 {
-        font-size: 10px;
-        color: #969696;
-    }
 
-    .box:hover {
-        transform: none;
-        box-shadow: 0px;
-        background: none;
-    }
 
-    .box:hover h5 {
-        color: #969696;
-        opacity: 100;
+    .container__box {
+        .box:hover h4 {
+            font-size: 0px;
+        }
     }
 
     .circle {
@@ -333,7 +347,7 @@
         margin-left: 0px;
         margin-top: 50px;
     }
-    
+
     .boton-dos {
         justify-content: center;
         margin-left: 0px;
@@ -343,13 +357,15 @@
     .boton-uno {
         justify-content: center;
         margin-left: 0px;
-        margin-top: 50px;}
+        margin-top: 50px;
+    }
 
 }
 
-@media (max-width: 1136px){
+@media (max-width: 1136px) {
 
     .boton-dos {
         margin-top: 0px;
-    
-    }}
+
+    }
+}

@@ -1,15 +1,6 @@
 /* PORTFOLIO */
 
-.titulo-portfolio {
-    color: $primario;
-    font-family: "poppins";
-    font-size: xxx-large;
-    font-weight: normal;
-    text-decoration: overline;
-    display: flex;
-    justify-content: center;
-    margin-top: 250px;
-    margin-bottom: -150px;
+.titulo-portfolio {@extend .texto-s-m
 }
 
 /* GRIDS CARD PORTFOLIO */

@@ -31,15 +31,15 @@
 
     .btn-primary {
         --bs-btn-color: #fff;
-        --bs-btn-bg: #ffc107;
-        --bs-btn-border-color: #ffc107;
+        --bs-btn-bg: #FDB52C ;
+        --bs-btn-border-color: #FDB52C;
         margin-left: 100px;
         font-family: "poppins"; text-transform: uppercase; font-size: medium;
     }
 
     .card-title {
         margin-bottom: var(--bs-card-title-spacer-y);
-        color: purple;
+        color: $primario;
         font-family: "poppins";
         font-weight: bolder; text-transform: uppercase;
     }
@@ -54,8 +54,8 @@
 
 .btn:hover {
     color: var(--bs-btn-hover-color);
-    background-color: #8f6c02;
-    border-color: #8f6c02;
+    background-color: $primario;
+    border-color:$primario;
 }
 
 .img-card {
