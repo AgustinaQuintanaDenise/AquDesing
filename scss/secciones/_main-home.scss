@@ -1,53 +1,70 @@
 /* HOME*/
+.body-home {
+    background-image: url(../../recursos/Fondohome.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background: cover;
+}
+
+.icono-down {
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+}
+
+/* Animacion hacia abajo*/
+.down {
+    width: 50px;
+    animation-name: down-uno;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+
+@keyframes down-uno {
+    0% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* PRESENTACIÓN */
 .presentacion {
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-
-
-    .parrafo-presentacion {
-        margin-top: 70px;
-        margin-left: 50px;
-        margin-right: 50px
-    }
+    flex-wrap: wrap;
 
     .uno {
-        color: $texto;
+        color: $textobotones;
         font-family: "poppins";
         font-size: 17pt;
         font-weight: lighter;
         text-align: center;
-        margin-bottom: 20px;
+        margin-top: 30px;
 
     }
 
     .dos {
         color: $secundario;
         font-family: "poppins";
-        font-size: x-large;
+        font-size: 25pt;
         font-weight: bold;
         text-align: center;
         font-weight: 1900;
-        padding-bottom: 20px;
-        border-bottom: 10px solid #9359E3;
+        padding-bottom: 25pt;
+        border-bottom: 10px solid #b28be9;
 
     }
-
-    .tres {
-        color: $texto;
-        font-family: "poppins";
-        font-size: medium;
-        font-weight: 100;
-        text-align: center;
-        margin-top: 30px;
-    }
-
 
     .agustinaquintana {
-        color: $primario;
-        font-family: "poppins" extrabold;
-        font-size: 30pt;
+        color: $textobotones;
+        font-family: "poppins";
+        font-size: 35pt;
         font-weight: bold;
         text-align: left;
         margin-bottom: 20px;
@@ -62,12 +79,51 @@
 
 }
 
+.bienvenidos p {
+    color: orange;
+    font-family: "poppins";
+    font-size: 35pt;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+
+}
+
+
+.tres {
+    color: $texto;
+    font-family: "poppins";
+    font-size: medium;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
 .imagen-agustina img {
-    width: 600px;
+    width: 550px;
+    margin-top: 120px;
 }
 
 .mockupcelular img {
     width: 600px;
+}
+
+.texto-me-especializo {
+    text-align: center;
+    color: $primario;
+    font-family: "poppins";
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    margin-top: 110px;
+    margin-bottom: 150px;
+}
+
+.seccion-dos {
+    margin-top: -200px;
 }
 
 .curriculum {
@@ -83,24 +139,30 @@
         font-family: "poppins";
         font-size: medium;
         text-align: left;
-        line-height: 30.5pt;
         list-style: none;
-    }
+        margin-bottom: 25px;
 
+        .icono-capacidades {
+            width: 40px;
+        }
+    }
 
     .titulo-capacidades {
         margin-top: 100px;
         color: $primario;
         font-family: "poppins";
-        font-size: xxx-large;
+        font-size: xx-large;
         font-weight: bolder;
         text-align: left;
-        margin-bottom: 20px;
+        margin-top: -20px;
+        margin-bottom: 70px;
     }
 
 }
 
-// MIXIN
+// BOTONES
+
+// mixin
 
 @mixin boton ($color-botones) {
     background-color: $color-botones;
@@ -128,244 +190,115 @@
 
 .boton-uno {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 350px;
-    margin-top: -130px
+    margin-left: 20px;
 }
 
 .boton-dos {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 280px;
-    margin-top: -50px;
+    margin-top: 100px;
 }
 
 
 
 .botones:hover {
-    transform: scale(1.2)
+    transform: scale(1.1)
 }
 
-
-.algunos-proyectos {
-    color: $primario;
-    font-family: "poppins";
-    font-size: xx-large;
-    font-weight: bolder;
-    text-align: center;
-    margin-top: 300px;
-    margin-bottom: -100px;
-}
-
-
-
-// CARDS PEQUEÑAS
-
-
-.container__box {
-    max-width: 700px;
-    margin: auto;
-    margin-top: 70px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-
-    .box {
-        width: 150px;
-        height: 150px;
-        background-color: #ffffff;
-        margin: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        border-top-left-radius: 50px;
-        border-bottom-right-radius: 50px;
-        transition: all 300ms ease;
-        position: relative;
-        box-shadow: 0px 0px 30px -5px rgba(43, 43, 43, 0.5);
-        transform: rotateZ(360deg);
-        transition: all 0.7s;
-    }
-
-    .box img {
-        width: 40px;
-    }
-
-    .box h5 {
-        margin-top: 30px;
-        text-transform: uppercase;
-        font-size: 13px;
-        color: #969696;
-
-    }
-
-    .box:hover h5 {
-        color: #ffffff;
-        opacity: 0;
-    }
-
-    .box:hover {
-        transform: scale(1.1);
-        box-shadow: 0px 0px 30px -15px rgba(129, 129, 129, 0.5);
-        background: $primario;
-    }
-
-    .box h4 {
-        text-transform: uppercase;
-        font-size: 16px;
-        color: #ffffff;
-        position: absolute;
-        bottom: 30px;
-        filter: blur(5px);
-        opacity: 0;
-    }
-
-    .box:hover h4 {
-        font-size: 13px;
-        opacity: 1;
-        filter: blur(0px);
-        color: #ffffff;
-        transition: all 400ms ease;
-    }
-}
-
-
-
-
+// ESTRATEGIA MOBILE LAST
 @media (max-width: 991px) {
+    .body-home {
+        background-image: url(../../recursos/Fondohome.jpg);
+        background-size: 0%;
+    }
 
-    .curriculum .lista-capacidades li {
-        text-align: center;
+    .down {
+        width: 0px;
     }
 
     .imagen-agustina img {
-        width: 400px;
+        margin-top: -0px;
+        width: 350px;
     }
 
     .mockupcelular img {
         width: 0px;
     }
 
-    .algunos-proyectos {
-        margin-top: 70px;
-        margin-bottom: -100px;
-    }
-
-    .curriculum .titulo-capacidades {
-        margin-top: -100px;
-        text-align: center;
-    }
-
     .presentacion {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center
+        .uno {
+            color: $texto;
+            font-family: "poppins";
+            font-size: 12pt;
+            margin-top: 100px;
+
+        }
+
+        .dos {
+            color: $secundario;
+            font-size: 20pt;
+
+        }
+
+        .agustinaquintana {
+            color: $primario;
+            font-size: 25pt;
+
+        }
+
     }
 
-    // CARDS PEQUEÑAS
+    .botones .boton-dos {
+        margin-top: 50px;
+    }
+
+    .bienvenidos p {
+        font-size: 0pt;
+
+    }
+
+    .tres {
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: small;
+    }
 
     .container__box {
-        justify-content: center;
-        margin-top: 100px;
+        margin-top: -90px;
+        align-items: flex-start;
+    }
 
-        .box:hover h5 {
-            color: #969696;
-            opacity: 100;
+    .curriculum {
+
+        .lista-capacidades li {
+            color: $texto;
+            font-family: "poppins";
+            font-size: medium;
+            text-align: center;
+            list-style: none;
+            margin-bottom: 15px;
+
+            .icono-capacidades {
+                width: 20px;
+            }
         }
 
-        .box img {
-            width: 20px;
+        .titulo-capacidades {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
         }
 
-        .box {
-            width: 0px;
-            height: 0px;
-            margin: 50px;
-            transition: none;
-            position: 0;
-            box-shadow: 0px;
-
-        }
-
-        .box:hover {
-            transform: none;
-            box-shadow: 0px;
-            background: none;
-
-        }
-
-        .box h5 {
-            font-size: 10px;
-            color: #969696;
-
-
-        }
     }
-
-
-
-    .container__box {
-        .box:hover h4 {
-            font-size: 0px;
-        }
-    }
-
-    .circle {
-        width: 0px;
-    }
-
-    .circlegrandeuno {
-        width: 0px;
-    }
-
-    .circlegrande {
-        width: 0px;
-
-    }
-
-    .circlegrande-dos {
-        width: 0px;
-    }
-
-    .circlegrande-tres {
-        width: 0px;
-    }
-
-    .rectangulo {
-        width: 0px;
-
-    }
-
     .boton-uno {
-        justify-content: center;
-        margin-left: 0px;
-        margin-top: 50px;
-    }
-
-    .boton-dos {
-        justify-content: center;
-        margin-left: 0px;
-        margin-top: 50px;
-    }
-
-    .boton-uno {
-        justify-content: center;
-        margin-left: 0px;
-        margin-top: 50px;
-    }
-
-}
-
-@media (max-width: 1136px) {
-
-    .boton-dos {
-        margin-top: 0px;
+        justify-content: center; margin-top:40px;
 
     }
+    
+
 }

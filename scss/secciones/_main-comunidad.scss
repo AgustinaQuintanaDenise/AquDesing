@@ -1,6 +1,19 @@
 /* COMUNIDAD */
 
-.maincomunidad {@extend .texto-s-m
+.body-comunidad {
+    background-image: url(../recursos/Fondohome.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.titulo-comunidad {
+    @extend .texto-s-m;
+
+}
+
+.parrafo-comunidad {
+    text-align: center;
+    color: $textobotones;
 }
 
 .carousel-inner {
@@ -9,9 +22,12 @@
     margin-top: 50px;
     margin-bottom: 200px;
 }
-.carousel-item iframe { display: flex;
+
+.carousel-item iframe {
+    display: flex;
     justify-content: center;
-    width: 700px;}
+    width: 700px; flex-direction: row; flex-wrap: wrap;
+}
 
 
 
@@ -20,28 +36,51 @@
     background-color: #ffffff;
 }
 
-.parrafo-comunidad {
+.parrafo-comunidad p {
     font-size: medium;
     text-align: center;
     margin-top: 200px;
-    color: $texto;
+    color: $textobotones;
 }
 
 
 @media (max-width: 991px) {
 
 
-    .carousel-item iframe {display: flex;
+    .carousel-item iframe {
+        display: flex;
         justify-content: center;
-        width: 400px;} 
+        width: 400px;
+    }
 
+    .body-comunidad {
+        background-image: none;
+        background-image: linear-gradient(to bottom, #9E69E8, #ffffff);
+    }
+
+    .card-container-portfolio {
+        display: flex;
+        justify-content: center;
+        margin-right: 100px;
+    }
+    .parrafo-comunidad { margin-left: 30px; margin-right: 30px;
+    }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 660px) {
 
 
-    .carousel-item iframe {display: flex;
+    .carousel-item iframe {
+        margin-right: 100px;
+        width: 350px;
+    }
+
+}
+@media (max-width: 470px) {
+
+    .carousel-item iframe {
+        display: flex;
         justify-content: center;
-        width: 250px;} 
-
+        width: 250px;
+    }
 }
