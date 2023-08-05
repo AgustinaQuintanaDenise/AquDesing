@@ -57,15 +57,7 @@
 }
 
 
-.body-portfolio {
-    background-image: url(../../recursos/Fondohome.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background: cover;
-}
-
 @media (max-width: 991px) {.body-portfolio {
-        background-image: none;
         background-image: linear-gradient(to bottom, #9E69E8, #ffffff);
 }
 .card-container-portfolio { display: flex; justify-content: center; margin-right: 100px;

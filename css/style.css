@@ -499,15 +499,8 @@ h3 {
   background-color: #9359E3;
   border-color: #9359E3; }
 
-.body-portfolio {
-  background-image: url(../../recursos/Fondohome.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background: cover; }
-
 @media (max-width: 991px) {
   .body-portfolio {
-    background-image: none;
     background-image: linear-gradient(to bottom, #9E69E8, #ffffff); }
   .card-container-portfolio {
     display: flex;
